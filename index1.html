@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>color Flipper</title>
+    <style>
+  
+    </style>
+  </head>
+  <body>
+  <nav>
+  <div class="Nav-center">
+
+  </div>
+  <nav>
+  <main>
+<div class="Container">
+ <h1>
+ Background color:<span class="color"> #F34utr</span>
+ </h1> 
+  <button class="btn btn-hero" id="btn">
+Click me
+</button>
+
+  </div>
+
+  </main>
+  <script>  
+
+  
+  const hex=[0,1,2,3,4,5,6,7,8,9,"A","B","C","D","E","F"];
+  const btn=document.getElementById("btn");
+   const color=document.querySelector(".color");
+  btn.addEventListener("click", function()
+   {
+     let hexcolor="#";
+     for (let i=0; i<6;i++){
+       hexcolor+=hex[getRandomNumber()];
+     }
+     color.textContent=hexcolor;
+     document.body.style.background=hexcolor;
+
+   }
+   );
+  function getRandomNumber(){
+    return Math.floor(Math.random()*hex.length);
+  }
+</script>
+    </body>
+</html>
+
