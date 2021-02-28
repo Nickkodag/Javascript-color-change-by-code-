@@ -34,7 +34,7 @@ Click me
   btn.addEventListener("click", function()
    {
      let hexcolor="#";
-     for (let i=0; i<6;i++){
+     for (let i=0; i<6;i++){    //color code have six digit only that why we are using i<6
        hexcolor+=hex[getRandomNumber()];
      }
      color.textContent=hexcolor;
